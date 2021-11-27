@@ -139,7 +139,276 @@ pada CIDR kita menggunakan gns3 untuk melakukan subnetting dan routing ,sebelumn
 
 ![image](https://user-images.githubusercontent.com/77099292/143672890-51ffbebe-5ca4-4790-b6c6-e2a65f330a75.png)
 
+Selanjutnya kita akan melakukan pembagian Subnet
+
+
+
 ### CIDR Tree
 
 ![cidrtree](SS\CIDRtree.png)
 
+### Setting GNS 3
+
+### Router
+
+##### Foosha
+
+```
+auto lo 
+iface lo inet loopback 
+
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 192.205.32.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.205.64.1
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 192.206.16.1
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 192.206.8.1
+	netmask 255.255.255.252
+```
+
+##### Water7
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.205.64.2
+	netmask 255.255.255.252
+gateway 192.205.64.1
+
+auto eth1
+iface eth1 inet static
+	address 192.205.128.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.205.16.1
+	netmask 255.255.255.252
+```
+
+##### Guanhao
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.16.2
+	netmask 255.255.255.252
+gateway 192.206.16.1
+
+auto eth1
+iface eth1 inet static
+	address 192.206.0.1
+	netmask 255.255.254.0
+
+auto eth2
+iface eth2 inet static
+	address 192.206.40.1
+	netmask 255.255.255.252
+
+
+auto eth3
+iface eth3 inet static
+	address 192.206.4.1
+	netmask 255.255.252.0
+```
+
+##### Oimo
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.40.2
+	netmask 255.255.255.252
+gateway 192.206.40.1
+
+auto eth1
+iface eth1 inet static
+	address 192.206.36.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address 192.206.48.1
+	netmask 255.255.255.252
+
+```
+
+##### Pucci
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.205.16.2
+	netmask 255.255.255.252
+gateway 192.205.16.1
+
+auto eth1
+iface eth1 inet static
+	address 192.205.8.1
+	netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+	address 192.205.0.1
+	netmask 255.255.248.0
+
+```
+
+##### Seastone
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.36.3
+	netmask 255.255.255.0
+gateway 192.206.36.1
+
+auto eth1
+iface eth1 inet static
+	address 192.206.32.1
+	netmask 255.255.252.0
+```
+
+#### Server
+
+##### Doroki
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.8.2
+	netmask 255.255.255.252
+gateway 192.206.8.1
+```
+
+##### Fukurou
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.48.2
+	netmask 255.255.255.252
+gateway 192.206.48.1
+```
+
+#### Client
+
+##### Blueno
+
+```
+
+auto eth0
+iface eth0 inet static
+	address 192.205.32.2
+	netmask 255.255.252.0
+	gateway 192.205.32.1
+
+```
+
+##### CIPHER
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.205.128.2
+	netmask 255.255.252.0
+gateway 192.205.128.1
+
+```
+
+##### Jipangu
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.205.8.2
+	netmask 255.255.255.128
+gateway 192.205.8.1
+```
+
+##### COURTYARD
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.205.0.3
+	netmask 255.255.248.0
+gateway 192.205.0.1
+
+```
+
+##### CALMBELT
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.205.0.2
+	netmask 255.255.248.0
+gateway 192.205.0.1
+
+```
+
+##### ENIESLOBBY
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.36.2
+	netmask 255.255.255.0
+gateway 192.206.36.1
+```
+
+##### ELENA
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.32.2
+	netmask 255.255.252.0
+gateway 192.206.32.1
+```
+
+##### JABRA
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.4.2
+	netmask 255.255.252.0
+gateway 192.206.4.1
+```
+
+##### MAINGATE
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.0.2
+	netmask 255.255.254.0
+gateway 192.206.0.1
+```
+
+##### JORGE
+
+```
+auto eth0
+iface eth0 inet static
+	address 192.206.2.2
+	netmask 255.255.254.0
+gateway 192.206.2.1
+```
