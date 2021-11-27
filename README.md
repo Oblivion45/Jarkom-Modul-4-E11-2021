@@ -412,3 +412,42 @@ iface eth0 inet static
 	netmask 255.255.254.0
 gateway 192.206.2.1
 ```
+
+### Routing
+
+##### Foosha
+
+##### Water7
+```
+
+echo 'nameserver 192.168.122.1' > /etc/resolv.conf
+
+route add -net 192.205.8.0 netmask 255.255.255.128 gw 192.205.16.2
+
+route add -net 192.205.0.0 netmask 255.255.248.0 gw 192.205.16.2
+
+```
+##### GUANHAO
+
+```
+echo 'nameserver 192.168.122.1' > /etc/resolv.conf
+
+route add -net 192.206.2.0 netmask 255.255.255.240 gw 192.206.0.3
+
+route add -net 192.206.48.0 netmask 255.255.255.252 gw 192.206.40.2
+
+route add -net 192.206.36.0 netmask 255.255.255.0 gw 192.206.40.2
+
+route add -net 192.206.32.0 netmask 255.255.252.0 gw 192.206.40.2
+
+```
+
+##### OIMO
+
+```                                  
+
+echo 'nameserver 192.168.122.1' > /etc/resolv.conf
+
+route add -net 192.206.32.0 netmask 255.255.252.0 gw 192.206.36.3
+```
+
