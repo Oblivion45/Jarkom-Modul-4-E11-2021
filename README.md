@@ -143,9 +143,8 @@ pada CIDR kita menggunakan gns3 untuk melakukan subnetting dan routing ,sebelumn
 
 ### Perhitungan 1
 
-![perhitunga1](SS\Perhitungan.png?raw=true "hitungsubnet")
+[![image.png](https://i.postimg.cc/YCwJ5yqr/image.png)](https://postimg.cc/RNXsfdHy)
 
-[![image.png](https://i.postimg.cc/vmFdHNZS/image.png)](https://postimg.cc/NK4ndbT1)
 
 ### Subnetting 
 
@@ -154,7 +153,6 @@ pada CIDR kita menggunakan gns3 untuk melakukan subnetting dan routing ,sebelumn
 ### CIDR Tree
 
 [![CIDRtree.png](https://i.postimg.cc/WzRZ9jNw/CIDRtree.png)](https://postimg.cc/tZ57TKVs)
-
 
 ### Setting GNS 3
 
