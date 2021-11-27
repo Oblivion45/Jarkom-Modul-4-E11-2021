@@ -147,7 +147,7 @@ Selanjutnya kita akan melakukan pembagian Subnet
 
 ### CIDR Tree
 
-[![cidr1.png](https://i.postimg.cc/MpYSsYDc/cidr1.png)](https://postimg.cc/YvjZ0YTk)
+[![CIDRtree.png](https://i.postimg.cc/WzRZ9jNw/CIDRtree.png)](https://postimg.cc/tZ57TKVs)
 
 ### Setting GNS 3
 
