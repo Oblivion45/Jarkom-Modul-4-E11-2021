@@ -85,6 +85,7 @@ Routing pada tiap-tiap routernya adalah sebagai berikut :
 |  A11 | 192.205.0.32|  /28  |192.205.2.1 |
 |      |   0.0.0.0   |  /0   |192.205.0.14|
 |  A12 |192.205.0.16 |  /30  |192.205.0.17|
+|  A15 | 192.205.16.0|  /22  |192.205.0.14|
 #### Water 7
 
 |Subnet|      IP     |Netmask|  Next Hop  |
@@ -108,6 +109,7 @@ Routing pada tiap-tiap routernya adalah sebagai berikut :
 |  A13 | 192.205.0.20|  /30  |192.205.0.18|
 |  A14 | 192.205.1.0 |  /24  |192.205.0.18|
 |      |   0.0.0.0   |  /0   |192.205.0.18|
+|  A15 | 192.205.16.0|  /22  |192.205.0.18|
 
 #### Alabasta
 
