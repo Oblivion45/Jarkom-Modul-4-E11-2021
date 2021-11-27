@@ -147,7 +147,7 @@ Selanjutnya kita akan melakukan pembagian Subnet
 
 ### CIDR Tree
 
-![cidrtree](SS\CIDRtree.png)
+[![cidr1.png](https://i.postimg.cc/MpYSsYDc/cidr1.png)](https://postimg.cc/YvjZ0YTk)
 
 ### Setting GNS 3
 
@@ -418,6 +418,33 @@ gateway 192.206.2.1
 ### Routing
 
 ##### Foosha
+
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+route add -net 192.205.128.0 netmask 255.255.252.0 gw 192.205.64.2
+
+route add -net 192.205.16.0 netmask 255.255.255.252 gw 192.205.64.2
+
+route add -net 192.205.8.0 netmask 255.255.255.128 gw 192.205.64.2
+
+route add -net 192.205.0.0 netmask 255.255.255.128 gw 192.205.64.2
+
+route add -net 192.206.4.0 netmask 255.255.252.0 gw 192.206.16.2
+
+route add -net 192.206.0.0 netmask 255.255.254.0 gw 192.206.16.2
+
+route add -net 192.206.2.0 netmask 255.255.255.240 gw 192.206.16.2
+
+route add -net 192.206.40.0 netmask 255.255.255.252 gw 192.206.16.2
+
+route add -net 192.206.48.0 netmask 255.255.255.252 gw 192.206.16.2
+
+route add -net 192.206.36.0 netmask 255.255.255.252 gw 192.206.16.2
+
+route add -net 192.206.32.0 netmask 255.255.252.0 gw 192.206.16.2
+
+```
 
 ##### Water7
 ```
