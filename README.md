@@ -128,6 +128,11 @@ Routing pada tiap-tiap routernya adalah sebagai berikut :
 |------|-------------|-------|------------|
 |      |   0.0.0.0   |  /0   |192.205.1.1 |
 
+### Hasil
+Pada gambar dibawah adalah beberapa contoh hasil testing dari subnetting dan routing :
+
+[![Whats-App-Image-2021-11-27-at-17-48-02.jpg](https://i.postimg.cc/fW52q4Z0/Whats-App-Image-2021-11-27-at-17-48-02.jpg)](https://postimg.cc/BtLBtVjq)
+
 ## CIDR
 
 pada CIDR kita menggunakan gns3 untuk melakukan subnetting dan routing ,sebelumnya kita membuat topologi yang sama dengan packet tracer terlebih dahulu seperti :
