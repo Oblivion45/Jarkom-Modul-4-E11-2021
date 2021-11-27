@@ -69,3 +69,8 @@ Setelah itu didapatkanlah pembagian IP dari setiap subnet sebagai berikut :
 |  A15 | 192.205.16.0 |  255.255.252.0    |
 
 ## CIDR
+
+pada CIDR kita menggunakan gns3 untuk melakukan subnetting dan routing ,sebelumnya kita membuat topologi yang sama dengan packet tracer terlebih dahulu seperti :
+
+![image](https://user-images.githubusercontent.com/77099292/143672890-51ffbebe-5ca4-4790-b6c6-e2a65f330a75.png)
+
