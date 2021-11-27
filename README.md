@@ -139,3 +139,7 @@ pada CIDR kita menggunakan gns3 untuk melakukan subnetting dan routing ,sebelumn
 
 ![image](https://user-images.githubusercontent.com/77099292/143672890-51ffbebe-5ca4-4790-b6c6-e2a65f330a75.png)
 
+### CIDR Tree
+
+![cidrtree](SS\CIDRtree.png)
+
